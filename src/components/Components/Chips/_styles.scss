@@ -1,0 +1,25 @@
+@import '~globals';
+
+.chips__list {
+  .md-chip {
+    margin: 1em;
+  }
+}
+
+.opacity-enter {
+  opacity: 0;
+
+  &.opacity-enter-active {
+    opacity: 1;
+    transition: $md-transition-time opacity;
+  }
+}
+
+.opacity-leave {
+  opacity: 1;
+
+  &.opacity-leave-active {
+    opacity: 0;
+    transition: $md-transition-time opacity;
+  }
+}

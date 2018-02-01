@@ -1,7 +1,7 @@
 import React from 'react';
 import { FontIcon } from 'react-md';
 
-const inboxListItems = [{
+export default [{
   key: 'inbox',
   primaryText: 'Inbox',
   leftIcon: <FontIcon>inbox</FontIcon>,
@@ -9,7 +9,7 @@ const inboxListItems = [{
 }, {
   key: 'starred',
   primaryText: 'Starred',
-  leftIcon: <FontIcon iconClassName="fa fa-star-o" />,
+  leftIcon: <FontIcon>star</FontIcon>,
 }, {
   key: 'send-mail',
   primaryText: 'Send mail',
@@ -31,5 +31,3 @@ const inboxListItems = [{
   primaryText: 'Spam',
   leftIcon: <FontIcon>info</FontIcon>,
 }];
-
-export default inboxListItems;

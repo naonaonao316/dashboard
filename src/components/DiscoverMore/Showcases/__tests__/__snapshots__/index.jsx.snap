@@ -1,0 +1,94 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Showcases should render all the showcases 1`] = `
+<div
+  class="md-grid"
+>
+  <section
+    class="markdown-container md-text-container md-cell md-cell--12"
+  >
+    <h2
+      id="showcases"
+    >
+      Showcases
+    </h2>
+    
+
+    <p>
+      The following is a list of products/apps that use react-md other than this documentation site. Their entire
+interface might not be implemented with react-md, but it should give a good idea of how it is used.
+    </p>
+    
+
+    <p>
+      Want to showcase your app/product? Either open a pull request adding your application or look at
+
+      <a
+        class="link"
+        href="https://github.com/mlaursen/react-md/issues/196"
+      >
+        the github issue
+      </a>
+       for getting your site added.
+    </p>
+    
+
+  </section>
+  <ul
+    class="md-grid md-grid--no-spacing md-list-unstyled md-cell md-cell--12"
+  >
+    <li
+      class="md-paper md-paper--1 md-card md-background--card showcase-card"
+    >
+      <a
+        class="md-media md-media--16-9"
+        href="https://bredariol.be"
+        title="Les Passions de Peronnes"
+      >
+        <img
+          alt="Les Passions de Peronnes"
+          src="some static content"
+        />
+      </a>
+      <div
+        class="md-card-title md-card-title--primary"
+      >
+        <div
+          class="md-card-title--title-block"
+        >
+          <h2
+            class="md-card-title--title md-card-title--large md-text"
+          >
+            Les Passions de Peronnes
+          </h2>
+          <h3
+            class="md-card-title--title md-text--secondary"
+          >
+            Fadi Khadra
+          </h3>
+        </div>
+        <a
+          class="md-btn md-btn--icon md-pointer--hover md-inline-block"
+          href="https://github.com/fkhadra"
+        >
+          <div
+            class="md-ink-container"
+          />
+          <i
+            class="md-icon fa fa-github md-text--inherit"
+          />
+        </a>
+      </div>
+      <section
+        class="md-card-text"
+      >
+        
+Les Passions de Péronnes offers you to discover wines of terroirs, wines of
+vignerons. Most of them are encountered during oeno-tourist trips, telling
+us their wines, their hopes sometimes very crazy.
+
+      </section>
+    </li>
+  </ul>
+</div>
+`;
