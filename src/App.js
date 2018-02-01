@@ -7,9 +7,12 @@ import {
   NavigationDrawer,
   SVGIcon,
   List,
-  ListItem
+  ListItem,
+  FontIcon
 } from 'react-md';
-// import { navItemLists } from 'constants/navItemLists.js';
+import inboxListItems from './constants/inboxListItems';
+
+// import './css/_styles.scss';
 
 import logo from './logo.svg';
 import './App.css';
@@ -30,18 +33,6 @@ class SimpleDrawer extends PureComponent {
   };
 
   render() {
-    const navItems = [{
-      primaryText: 'Menu1',
-      secondaryText:"Jan 9, 2014",
-      leftIcon: 'Info'
-    }, {
-      primaryText: 'Menu2'
-    }, {
-      primaryText: 'Menu3'
-    }, {
-      primaryText: 'Menu4'
-    }];
-
 
     const { visible, position } = this.state;
     const closeBtn = <Button icon onClick={this.closeDrawer}>{'arrow_back'}</Button>;
@@ -57,7 +48,7 @@ class SimpleDrawer extends PureComponent {
           visible={visible}
           position={position}
           onVisibilityChange={this.handleVisibility}
-          navItems={navItems}
+          navItems={inboxListItems}
         />
       </div>
     );
