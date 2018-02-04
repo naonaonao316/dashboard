@@ -15,6 +15,9 @@ import {
   bem
 } from 'react-md';
 
+// Those files will be needed for navigation bar
+// import navItems from './constants/navItems';
+// import Link from './components/Link';
 import menu from './icons/menu.svg';
 import arrowBack from './icons/arrow_back.svg';
 import inboxListItems from './constants/inboxListItems';
@@ -99,6 +102,25 @@ class Dialog extends PureComponent {
   }
 }
 
+const Floating = () => (
+  <div className="buttons__group">
+    <h5>Theme Examples</h5>
+    <Button floating>home</Button>
+    <Button floating primary>share</Button>
+    <Button floating secondary iconClassName="fa fa-star-o" />
+    <h5>Mini Examples</h5>
+    <Button floating mini>home</Button>
+    <Button floating primary mini>share</Button>
+    <Button floating secondary iconClassName="fa fa-star-o" mini />
+    <h5>Disabled Examples</h5>
+    <Button floating primary disabled>favorite</Button>
+    <Button floating secondary disabled>close</Button>
+    <h5>Theme Swapped Examples</h5>
+    <Button floating primary swapTheming>favorite</Button>
+    <Button floating secondary swapTheming>favorite</Button>
+  </div>
+);
+
 class Simple extends PureComponent {
   constructor() {
     super();
@@ -176,6 +198,7 @@ class Simple extends PureComponent {
             <h2 className="md-cell md-cell--12">Currently on page: {page}</h2>
             <section className="md-text-container md-cell md-cell--12">
               <p>The content will be displayed here</p>
+              <Floating />
             </section>
           </NavigationDrawer>
         </DialogContainer>
@@ -189,6 +212,7 @@ class App extends Component {
     return(
       <div>
         <Simple />
+        <Floating />
       </div>
     )
   }
